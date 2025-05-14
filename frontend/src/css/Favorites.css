@@ -49,4 +49,11 @@
 .movies-grid > * {
   animation: fadeIn 0.3s ease-out forwards;
 }
-
+.movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}

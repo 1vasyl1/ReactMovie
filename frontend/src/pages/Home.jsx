@@ -61,10 +61,9 @@ function Home() {
         {error && <div className="error-massage">{error}</div>}
 
         {loading ? ( <div className='loading'>loading</div> ) : (
-        <div className="movie-grid">
+        <div className="movies-grid">
             {movies.map(
                 (movie) => 
-                movie.title.toLowerCase().startsWith(searchQuery) && 
                 (<MovieCard  movie = {movie} key = {movie.id} />)
             )}
         </div>
